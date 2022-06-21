@@ -104,7 +104,7 @@ int main() {
         LL a = getPrimeNumber(ipow(2, 28));
     }
 
-    cout << (time(NULL) - start) << "sec to generate 10,000 long prime numbers" << endl;
+    cout << (time(NULL) - start) << "sec to generate 100,000 long prime numbers" << endl;
     
     return 0;
  }
