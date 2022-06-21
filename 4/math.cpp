@@ -97,22 +97,14 @@ LL getPrimeNumber(LL lim) {
 }
 
 int main() {
-    cout << "start" << endl;
-    cout << ipow(2, 28) << endl;
-    cout << "------" << endl;
-    
-    time_t now = time(NULL);
+    time_t start = time(NULL);
     srand(time(NULL));
-        
-    LL a = getPrimeNumber(ipow(2, 28));
-    LL b = getPrimeNumber(ipow(2, 28));
-    
-    cout << a << endl;
-    cout << b << endl;
-    
-    cout << time(NULL) - now << endl;
-    cout << "1234567890123456" << endl;
-    cout << hex << a * b << endl;
+
+    for (int i = 0; i < 100000; i++) {
+        LL a = getPrimeNumber(ipow(2, 28));
+    }
+
+    cout << (time(NULL) - start) << "sec to generate 10,000 long prime numbers" << endl;
     
     return 0;
  }
